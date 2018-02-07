@@ -16,7 +16,30 @@ List::~List()
 	}
 	delete head;
 }
+// add this method your list class
+void List::Print() 
+{
+	static int testNum = 0;
+	testNum++;
 
+	Node *cur = head;
+	std::cout << std::endl << "____" << testNum << "___" << std::endl;
+	while (cur != nullptr)
+	{
+		if (cur->data)
+		{
+			if (cur->data->characters)
+			{
+				std::cout << cur->data->characters << " ";
+
+
+			}
+		}
+		cur = cur->next;
+	}
+	std::cout << std::endl;
+
+}
 void List::insertBefore(Node *loc, const SimpleString &d)
 {
 	Node *current = head;

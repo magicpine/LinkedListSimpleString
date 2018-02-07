@@ -2,35 +2,7 @@
 //
 #include <iostream>
 #include <string>
-
-
-
-
-
-	// add this method your list class
-void List::Print() {
-	static int testNum = 0;
-	testNum++;
-
-	Node *cur = head;
-	std::cout << std::endl << "____" << testNum << "___" << std::endl;
-	while (cur != nullptr)
-	{
-		if (cur->data)
-		{
-			if (cur->data->characters)
-			{
-				std::cout << cur->data->characters << " ";
-
-
-			}
-		}
-		cur = cur->next;
-	}
-	std::cout << std::endl;
-
-}
-
+#include "List.h"
 
 
 // test your code using the below .
