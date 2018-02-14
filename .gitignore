@@ -260,3 +260,5 @@ paket-files/
 __pycache__/
 *.pyc
 /deps/SFML-2.4.2
+
+*.docx
